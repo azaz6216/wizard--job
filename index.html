@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard Job - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function redirectToHome(event) {
+            event.preventDefault(); // Prevent form from submitting
+            window.location.href = "login.html"; // Redirect to the home page
+        }
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Wizard Job</h1>
+        </div>
+    </header>
+
+    <!-- Login Form Section -->
+    <section id="login">
+        <div class="container">
+            <h2>Login to Your Account</h2>
+            <form onsubmit="redirectToHome(event)">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+
+                <button type="submit">Login</button>
+                
+                <p>Don't have an account? <a href="signup.html">Sign Up here</a></p>
+                <p>Forgot your password? <a href="password-reset.html">Reset Password</a></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Wizard Job. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

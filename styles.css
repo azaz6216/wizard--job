@@ -1,0 +1,264 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Container for consistent spacing */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Home Section */
+section#home {
+    background: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+section#home h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+section#home p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#home button {
+    padding: 10px 25px;
+    font-size: 16px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#home button:hover {
+    background: #45a049;
+}
+
+/* Job Listings Section */
+section#jobs {
+    padding: 80px 0;
+}
+
+.job-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.job-item {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 30%;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.job-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.job-item h3 {
+    margin-bottom: 10px;
+}
+
+.job-item button {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.job-item button:hover {
+    background: #45a049;
+}
+
+/* About Section */
+section#about {
+    background: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+section#about h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+section#about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px; /* Limiting width for readability */
+    margin: 0 auto; /* Centering the paragraph */
+}
+
+/* Contact Section */
+section#contact {
+    padding: 80px 0;
+    background: #fff; /* Added background for separation */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    text-align: center; /* Center text */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Limiting form width */
+    margin: 0 auto; /* Centering the form */
+}
+
+form label {
+    margin: 10px 0 5px;
+    text-align: left; /* Align labels to the left */
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border: 2px solid #4CAF50; /* Highlight focus */
+}
+
+form button {
+    padding: 10px 25px;
+    font-size: 16px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .job-item {
+        width: 90%; /* Stack job items on smaller screens */
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation items vertically on smaller screens */
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+}
+
+/* Logout Section */
+section#logout {
+    background: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+section#logout h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+section#logout p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+section#logout button {
+    padding: 10px 25px;
+    font-size: 16px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#signup h2 {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+#login h2 {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+#password-reset h2 {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
